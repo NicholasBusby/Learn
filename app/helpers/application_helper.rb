@@ -4,8 +4,17 @@ module ApplicationHelper
       "http://learn.dev/"
     end
 
-    def parts
+    def parts_start
       "parts"
     end
+
+    def checkout_start
+      "checkout"
+    end
+
+    def customer_service
+      "customerservice"
+    end
+
   end
 end

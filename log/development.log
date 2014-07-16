@@ -5243,3 +5243,72 @@ Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 15:57:35 -040
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 15:57:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 16:49:23 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (26.9ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined method `customerservice' for ApplicationHelper:Module):
+    2:   = link_to 'home', ApplicationHelper.home_page
+    3:   = link_to 'parts', ApplicationHelper.parts_start
+    4:   = link_to 'checkout', ApplicationHelper.checkout_start
+    5:   = link_to 'customer service', ApplicationHelper.customerservice
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml___3887009637647294325_70258351156100'
+
+
+  Rendered /Users/nbusby/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/nbusby/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/nbusby/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 16:49:41 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-16 16:49:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-16 16:49:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-16 16:49:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-16 16:49:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-16 16:49:44 -0400
+
+
+Started GET "/parts" for 127.0.0.1 at 2014-07-16 16:52:14 -0400
+Processing by PartsController#parts as HTML
+  Rendered parts/parts.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 49ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parts" for 127.0.0.1 at 2014-07-16 16:52:35 -0400
+Processing by PartsController#parts as HTML
+  Rendered parts/parts.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/checkout" for 127.0.0.1 at 2014-07-16 16:52:37 -0400
+Processing by CheckoutController#checkout as HTML
+  Rendered checkout/checkout.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customerservice" for 127.0.0.1 at 2014-07-16 16:52:38 -0400
+Processing by CustomerServiceController#customer_service as HTML
+  Rendered customer_service/customer_service.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-16 16:52:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
